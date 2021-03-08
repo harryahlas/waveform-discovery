@@ -3,7 +3,7 @@
 # import required libraries 
 from pydub import AudioSegment  
 from pydub.playback import play  
-  
+import numpy as np
 # Import an audio file  
 # Format parameter only 
 # for readability  
@@ -15,37 +15,21 @@ plt.show()
 
 play(wav_file)
  
+
 type(x) 
 len(x)
 
-# data type fo the file 
-print(type(wav_file))  
+x1 = np.zeros(len(x))
+x2 = np.zeros(len(x))
+x3 = np.zeros(len(x))
+x4 = np.zeros(len(x))
+x5 = np.zeros(len(x))
+x1[0:(len(x) - 1)] = np.diff(x)
+x2[0:(len(x) - 2)] = x1[1:(len(x) - 1)]
+x3[0:(len(x) - 4)] = x1[2:(len(x) - 2)]
+x4[0:(len(x) - 6)] = x1[3:(len(x) - 3)]
+x5[0:(len(x) - 8)] = x1[4:(len(x) - 4)]
 
-#  To find frame rate of song/file 
-print(wav_file.frame_rate)    
-
-# To know about channels of file 
-print(wav_file.channels)  
-
-# Find the number of bytes per sample  
-print(wav_file.sample_width )  
-
-# Find Maximum amplitude  
-print(wav_file.max) 
-
-# To know length of audio file 
-print(len(wav_file)) 
-
-''' 
-We can change the attrinbutes of file by  
-changeed_audio_segment = audio_segment.set_ATTRIBUTENAME(x)  
-'''
-wav_file_new = wav_file.set_frame_rate(50)  
-print(wav_file_new.frame_rate) 
-
-
-x = wav_file.get_array_of_samples()
-import matplotlib.pyplot as plt 
-plt.plot(x[0:100000])
-plt.show()
-plt.close()
+y = np.column_stack((x, x1, x2, x3, x4, x5))
+unique, frequency = np.unique(y,  
+                              return_counts = True) 
