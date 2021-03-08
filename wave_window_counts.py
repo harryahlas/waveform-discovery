@@ -1,3 +1,5 @@
+#needs to run in spyder, not RStudio
+
 # import required libraries 
 from pydub import AudioSegment  
 from pydub.playback import play  
@@ -5,10 +7,16 @@ from pydub.playback import play
 # Import an audio file  
 # Format parameter only 
 # for readability  
-wav_file = AudioSegment.from_file(file = "data/KranK D w_ Mesa_289.wav",format = "wav")  
-  
-wav_file[0]
+wav_file = AudioSegment.from_file(file = "C:\\Users\\hahla\\Desktop\\github\\waveform-discovery\\data\\testgtr.mp3",format = "mp3" )  
+x = wav_file.get_array_of_samples()
+import matplotlib.pyplot as plt 
+plt.plot(x[10000:20010])
+plt.show()
 
+play(wav_file)
+ 
+type(x) 
+len(x)
 
 # data type fo the file 
 print(type(wav_file))  
@@ -37,3 +45,7 @@ print(wav_file_new.frame_rate)
 
 
 x = wav_file.get_array_of_samples()
+import matplotlib.pyplot as plt 
+plt.plot(x[0:100000])
+plt.show()
+plt.close()
