@@ -2,6 +2,7 @@
 
 Analysis of waves for ML 
 
+### wave_window_counts.py
 - [ ] Understand appropriate filter/kernel count for waveform
   - [ ] Import waveform
   - [ ] Calculate rolling variance for 2-5 samples
