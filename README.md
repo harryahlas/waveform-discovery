@@ -2,7 +2,7 @@
 
 Analysis of waves for ML 
 
-### wave_window_counts.py
+### wave_window_counts_vNN.py
 - [ ] Understand appropriate filter/kernel count for waveform
   - [x] Import waveform
   - [x] Calculate rolling variance for 2-5 samples
@@ -11,5 +11,7 @@ Analysis of waves for ML
     - [x] 3 samples: not good only very small values repeated
     - [x] 4 samples: didn't even look
     - [x] 5 samples: didn't even look
-  - [ ] **Next** Try importing longer sample and see how grouping changes   *python/wave_window_counts_v02.py (tbd)*
-- [_] Figure out how to import old wavs (vs mp3s)
+  - [ ] Try importing longer sample and see how grouping changes   *python/wave_window_counts_v02.py*
+    - Percent missed if we use (~17000) filters that occur 2+ times ~ 3%
+    - Percent missed if we use (~12000) filters that occur 3+ times ~ 5%
+- [ ] Figure out how to import old wavs (vs mp3s)
