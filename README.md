@@ -16,17 +16,18 @@ Analysis of waves for ML
     - Percent missed if we use (~12000) filters that occur 3+ times ~ 5%
     
 ### Distortion Analysis
-- [ ] Research optimisers, eg not mean squared error. What is the best one?
+- [x] Research optimisers, eg not mean squared error. What is the best one? Not hinge
   - Starting point: [https://keras.io/api/losses/](https://keras.io/api/losses/)
 - [ ] Short, low distortion test.  See if we can get great accuracy on short wave prediction
   - [ ] Identify script for generating small waves
-  - [ ] Determine what 1k sample might look like
+  - [ ] Determine what 1k sample might look like. Maybe start with a very small number of samples
     - [ ] max width - should be very short for this, maybe 50 samples?
     - [ ] max height
   - [ ] Generate 1k di samples
   - [ ] Generate 1k dist samples using steinberg tools
   - [ ] Identify ML approach, cnn vs nn
   - [ ] Build model
+  - [ ] Try different losses and maybe different optimizers from link above
   - [ ] Try visualizing filters if it makes sense
 - [ ] Evaluate results. If above works, move below. If not, do an even shorter test.
 - [ ] Longer low distortion test
