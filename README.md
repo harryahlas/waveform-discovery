@@ -26,6 +26,8 @@ Analysis of waves for ML
   - [ ] Generate 1k di samples
   - [ ] Generate 1k dist samples using steinberg tools
   - [ ] Identify ML approach, cnn vs nn
+  - [ ] Build model
+  - [ ] Try visualizing filters if it makes sense
 - [ ] Evaluate results. If above works, move below. If not, do an even shorter test.
 - [ ] Longer low distortion test
   - [ ] create steps
