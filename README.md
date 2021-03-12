@@ -20,11 +20,13 @@ Analysis of waves for ML
   - Starting point: [https://keras.io/api/losses/](https://keras.io/api/losses/)
 - [ ] Short, low distortion test.  See if we can get great accuracy on short wave prediction
   - [x] Identify script for generating artificial waves: [00_create_artificial_waves.py](https://github.com/harryahlas/flayer/blob/master/00_create_artificial_waves.py)
-  - [ ] Test/debug artificial waves script
-  - [ ] Determine what 1k sample might look like. Maybe start with a very small number of samples
+  - [x] Test/debug artificial waves script
+  - [ ] Determine what samples might look like. 
+    - [ ] How many? Maybe start with a very small number of samples <1k
     - [ ] max width - should be very short for this, maybe 50 samples?
     - [ ] max height
-  - [ ] Generate 1k di samples
+    - [ ] how much space/padding/start point etc
+  - [ ] Generate initial samples
   - [ ] Generate 1k dist samples using steinberg tools
   - [ ] Identify ML approach, cnn vs nn
   - [ ] Build model
