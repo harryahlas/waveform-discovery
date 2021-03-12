@@ -28,6 +28,10 @@ Analysis of waves for ML
   - [ ] Identify ML approach, cnn vs nn
   - [ ] Build model
   - [ ] Try different losses and maybe different optimizers from link above
+    - Optimizers:
+      - [ ] default/MSE
+      - [ ] Mean absolute error <code>model.compile(optimizer='sgd', loss=tf.keras.losses.MeanAbsoluteError())</code> [MeanAbsoluteError](https://keras.io/api/losses/regression_losses/#meanabsoluteerror-class)
+      - [ ] Mean absolute % error <code>MeanAbsolutePercentageError()</code>, same link as above
   - [ ] Try visualizing filters if it makes sense
 - [ ] Evaluate results. If above works, move below. If not, do an even shorter test.
 - [ ] Longer low distortion test
