@@ -19,7 +19,8 @@ Analysis of waves for ML
 - [x] Research optimisers, eg not mean squared error. What is the best one? Not hinge
   - Starting point: [https://keras.io/api/losses/](https://keras.io/api/losses/)
 - [ ] Short, low distortion test.  See if we can get great accuracy on short wave prediction
-  - [ ] Identify script for generating small waves
+  - [x] Identify script for generating artificial waves: [00_create_artificial_waves.py](https://github.com/harryahlas/flayer/blob/master/00_create_artificial_waves.py)
+  - [ ] Test/debug artificial waves script
   - [ ] Determine what 1k sample might look like. Maybe start with a very small number of samples
     - [ ] max width - should be very short for this, maybe 50 samples?
     - [ ] max height
@@ -32,6 +33,7 @@ Analysis of waves for ML
       - [ ] default/MSE
       - [ ] Mean absolute error <code>model.compile(optimizer='sgd', loss=tf.keras.losses.MeanAbsoluteError())</code> [MeanAbsoluteError](https://keras.io/api/losses/regression_losses/#meanabsoluteerror-class)
       - [ ] Mean absolute % error <code>MeanAbsolutePercentageError()</code>, same link as above
+      - [ ] Cosine similarity <code>model.compile(optimizer='sgd', loss=tf.keras.losses.CosineSimilarity(axis=1))</code>, same link as above
   - [ ] Try visualizing filters if it makes sense
 - [ ] Evaluate results. If above works, move below. If not, do an even shorter test.
 - [ ] Longer low distortion test
