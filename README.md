@@ -22,6 +22,7 @@ Analysis of waves for ML
   - [x] Identify script for generating artificial waves: [00_create_artificial_waves.py](https://github.com/harryahlas/flayer/blob/master/00_create_artificial_waves.py)
   - [x] Test/debug artificial waves script
   - [ ] Determine what samples might look like. 
+    - [ ] Conduct brief steinberg tests on both amp and IR
     - [ ] How many? Maybe start with a very small number of samples <1k
     - [ ] max width - should be very short for this, maybe 50 samples?
     - [ ] max height
