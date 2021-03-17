@@ -44,3 +44,16 @@ Analysis of waves for ML
 
 ### Data Input
 - [ ] Figure out how to import old wavs (vs mp3s, endianness etc) *optional*
+
+### Alternate
+- [ ] **Try this:** [https://github.com/GuitarML/GuitarLSTM](https://github.com/GuitarML/GuitarLSTM)
+  - [ ] Create DI file 3-4 minutes, lots of playing styles
+  - [ ] Create Dist file. Import back into DAW and then align it.
+  - [ ] Export them both 
+  - [x] Create colab file
+  - [ ] Try these parameters:
+--training_mode=0  # enter 0, 1, or 2 for speed tranining, accuracy training, or extended training, respectively
+--input_size=150   # sets the number of previous samples to consider for each output sample of audio
+--split_data=3     # splits the input data by X amount to reduce RAM usage; trains the model on each split separately
+--max_epochs=1     # sets the number of epochs to train for; intended to be increased dramatically for extended training
+--batch_size=4096  # sets the batch size of data for training
