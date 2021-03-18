@@ -47,9 +47,9 @@ Analysis of waves for ML
 
 ### Alternate
 - [ ] **Try this:** [https://github.com/GuitarML/GuitarLSTM](https://github.com/GuitarML/GuitarLSTM)
-  - [ ] Create DI file 3-4 minutes, lots of playing styles
-  - [ ] Create Dist file. Import back into DAW and then align it.
-  - [ ] Export them both 
+  - [x] Create DI file 3-4 minutes, lots of playing styles
+  - [x] Create Dist file. Import back into DAW and then align it.
+  - [x] Export them both 
   - [x] Create colab file
   - [ ] Try these parameters:
 --training_mode=0  # enter 0, 1, or 2 for speed tranining, accuracy training, or extended training, respectively
