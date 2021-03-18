@@ -57,3 +57,4 @@ Analysis of waves for ML
 --split_data=3     # splits the input data by X amount to reduce RAM usage; trains the model on each split separately
 --max_epochs=1     # sets the number of epochs to train for; intended to be increased dramatically for extended training
 --batch_size=4096  # sets the batch size of data for training
+  -[ ] Rerun with more time. Note that splitting the data by 30 allowed it to run.
