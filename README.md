@@ -94,7 +94,7 @@ Analysis of waves for ML
 
     -   [ ] Try higher input size argument without IR: <code>!python train.py --training_mode=1 --split_data=30 --input_size=500 --max_epochs=3 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y\_amp_only.wav harry_model</code>
 
-        -   **Note: this may have errored out not because of too much computing but because I had an additional GuitarLSTM directory**
+        -   **TRY RUNNING ABOVE AGAIN...Note: this may have errored out not because of too much computing but because I had an additional GuitarLSTM directory**
         -   changed split_data to 30 because it crashed at 15
         -   changed to 3 epochs because ran out of time
         -   [ ] If this works noticeably better then try with more epochs and consider adding IR back.
