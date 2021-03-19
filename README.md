@@ -58,4 +58,6 @@ Analysis of waves for ML
 --max_epochs=1     # sets the number of epochs to train for; intended to be increased dramatically for extended training
 --batch_size=4096  # sets the batch size of data for training
   - [ ] Rerun with more time/epochs. Note that splitting the data by 15 allowed it to run.
-    - [ ] <code>!python train.py --training_mode=2 --split_data=15 --max_epochs=30 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y.wav harry_model</code>
+    - [x] <code>!python train.py --training_mode=2 --split_data=15 --max_epochs=30 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y.wav harry_model</code> meh
+    - [ ] <code>!python train.py --training_mode=1 --split_data=3 --max_epochs=150 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y.wav harry_model2</code>
+    - [ ] If improvement is minimal then try one of above without IR. If it comes close to matching amp alone, then that is a learning.
