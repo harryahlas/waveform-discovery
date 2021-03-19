@@ -57,7 +57,9 @@ Analysis of waves for ML
 --split_data=3     # splits the input data by X amount to reduce RAM usage; trains the model on each split separately
 --max_epochs=1     # sets the number of epochs to train for; intended to be increased dramatically for extended training
 --batch_size=4096  # sets the batch size of data for training
-  - [ ] Rerun with more time/epochs. Note that splitting the data by 15 allowed it to run.
+  - [x] Rerun with more time/epochs. Note that splitting the data by 15 allowed it to run.
     - [x] <code>!python train.py --training_mode=2 --split_data=15 --max_epochs=30 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y.wav harry_model</code> meh
-    - [ ] <code>!python train.py --training_mode=1 --split_data=3 --max_epochs=150 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y.wav harry_model2</code>
-    - [ ] If improvement is minimal then try one of above without IR. If it comes close to matching amp alone, then that is a learning.
+    - [x] <code>!python train.py --training_mode=1 --split_data=3 --max_epochs=150 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y.wav harry_model2</code>
+    - 2nd run is definitely better but still long way from accurate.
+    - [x] If improvement is minimal then try one of above without IR. If it comes close to matching amp alone, then that is a learning.
+  - [ ] Try higher input size argument without IR: <code>!python train.py --training_mode=1 --split_data=10 --input_size=500 --max_epochs=50 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y_amp_only.wav harry_model</code>. If that works noticeably better then try either more epochs or back with IR
