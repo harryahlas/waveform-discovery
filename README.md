@@ -92,9 +92,8 @@ Analysis of waves for ML
         -   2nd run is definitely better but still long way from accurate.
         -   [x] If improvement is minimal then try one of above without IR. If it comes close to matching amp alone, then that is a learning.
 
-    -   [ ] Try higher input size argument without IR: <code>!python train.py --training_mode=1 --split_data=30 --input_size=500 --max_epochs=3 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y\_amp_only.wav harry_model</code>
-
-        -   **TRY RUNNING ABOVE AGAIN...Note: this may have errored out not because of too much computing but because I had an additional GuitarLSTM directory**
+    -   [x] Try higher input size argument without IR: <code>!python train.py --training_mode=1 --split_data=30 --input_size=500 --max_epochs=3 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y\_amp_only.wav harry_model</code>
+        - [ ] this is breaking now, not sure why. Can research, maybe look at an older version. Try this: <code>!python train.py --training_mode=2 --split_data=15 --input_size=50 --max_epochs=3 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y_amp_only.wav harry_model</code> 
         -   changed split_data to 30 because it crashed at 15
         -   changed to 3 epochs because ran out of time
         -   [ ] If this works noticeably better then try with more epochs and consider adding IR back.
