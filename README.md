@@ -106,7 +106,7 @@ Analysis of waves for ML
         -   [x] Change learning rate on training.py to .0001 then run this: <code>python train.py ../captures/firstmodel2.wav firstmodeld</code>
             - clearly needs more training runs      
         -   [ ] Change learning rate on training.py to .0001 then run this: <code>python train.py ../captures/firstmodel2.wav --max_epochs=15 firstmodele</code>
-            -   [ ] Try on colab:
+            -   [ ] Try on colab *GuitarLSTMbasic.ipynb*:
                 - import tensorflow, make sure it is 2.4
                 - Copy train.py code there, make sure learning rate is .0001
                 - Increase epochs
