@@ -111,11 +111,6 @@ Analysis of waves for ML
                 - Copy train.py code there, make sure learning rate is .0001
                 - Increase epochs
                 -   <code>python train.py ../captures/firstmodel2.wav firstmodel2d --max_epochs=15</code>
-                -   [x] run this: name="colabharry10"
-out_file=""
-batch_size=4096
-max_epochs=75
-create_plots=0
-input_size=120
-split_data=6
+                -   [x] run this: name="colabharry10" out_file="" batch_size=4096 max_epochs=75 create_plots=0 input_size=120 split_data=6
                 - *pending - see if improvement is significant - if so, extend training epochs*   
+        - [ ] once this works noticeably better try running in plugin
