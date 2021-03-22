@@ -101,5 +101,15 @@ Analysis of waves for ML
     -   Test plugin - cd C:\Users\USERNAME\AppData\Roaming\GuitarML\SmartAmpPro\training
         -   [x] <code>python train.py ../captures/firstmodel2.wav firstmodel2b</code>
             - garbage
-        -   [ ] <code>python train.py ../captures/firstmodel2.wav firstmodel2c --max_epochs=15</code>
+        -   [x] <code>python train.py ../captures/firstmodel2.wav firstmodel2c --max_epochs=15</code>
+            - disappointingly similar garbage   
+        -   [ ] Change learning rate on training.py to .0001 then run this: <code>python train.py ../captures/firstmodel2.wav firstmodel2d</code>
+        -   [ ] Change learning rate on training.py to .0001 then run this: <code>python train.py ../captures/firstmodel2.wav --max_epochs=15 firstmodel2e</code>
+            -   maybe run this on colab       
+        -   [ ] Try on colab:
+            - import tensorflow, make sure it is 2.4
+            - Copy train.py code there
+            - update learning rate to much smaller number (look up #2, I think it may be .0001)
+            - Increase epochs
+            -   <code>python train.py ../captures/firstmodel2.wav firstmodel2d --max_epochs=15</code>
             - *pending - see if improvement is significant - if so, extend training epochs*   
