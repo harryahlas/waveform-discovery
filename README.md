@@ -93,8 +93,13 @@ Analysis of waves for ML
         -   [x] If improvement is minimal then try one of above without IR. If it comes close to matching amp alone, then that is a learning.
 
     -   [x] Try higher input size argument without IR: <code>!python train.py --training_mode=1 --split_data=30 --input_size=500 --max_epochs=3 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y\_amp_only.wav harry_model</code>
-        - [ ] this is breaking now, not sure why. Can research, maybe look at an older version. Try this: <code>!python train.py --training_mode=2 --split_data=15 --input_size=50 --max_epochs=3 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y_amp_only.wav harry_model</code> 
+        - [x] this is breaking now, not sure why. Can research, maybe look at an older version. Try this: <code>!python train.py --training_mode=2 --split_data=15 --input_size=50 --max_epochs=3 /content/gdrive/MyDrive/Development/audio/train_x.wav /content/gdrive/MyDrive/Development/audio/train_y_amp_only.wav harry_model</code> 
             - this woks, not sure whyother dores not...**research?**
         -   changed split_data to 30 because it crashed at 15
         -   changed to 3 epochs because ran out of time
-        -   [ ] If this works noticeably better then try with more epochs and consider adding IR back.
+        -   [x] If this works noticeably better then try with more epochs and consider adding IR back.
+    -   Test plugin - cd C:\Users\USERNAME\AppData\Roaming\GuitarML\SmartAmpPro\training
+        -   [x] python train.py ../captures/firstmodel2.wav firstmodel2c
+            - garbage
+        -   [ ] python train.py ../captures/firstmodel2.wav firstmodel2c --max_epochs=15
+            - *pending - see if improvement is significant - if so, extend training epochs*   
