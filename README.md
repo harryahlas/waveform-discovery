@@ -99,7 +99,7 @@ Analysis of waves for ML
         -   changed to 3 epochs because ran out of time
         -   [x] If this works noticeably better then try with more epochs and consider adding IR back.
     -   Test plugin - cd C:\Users\USERNAME\AppData\Roaming\GuitarML\SmartAmpPro\training
-        -   [x] python train.py ../captures/firstmodel2.wav firstmodel2c
+        -   [x] <code>python train.py ../captures/firstmodel2.wav firstmodel2c</code>
             - garbage
-        -   [ ] python train.py ../captures/firstmodel2.wav firstmodel2c --max_epochs=15
+        -   [ ] <code>python train.py ../captures/firstmodel2.wav firstmodel2c --max_epochs=15</code>
             - *pending - see if improvement is significant - if so, extend training epochs*   
