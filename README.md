@@ -1,6 +1,6 @@
 # waveform-discovery
 
-Analysis of waves for ML
+Analysis of waves for ML. Also contains basic amp model process (*python/Yet_another_amp.ipynb*) similar to NAM.
 
 ### wave_window_counts_vNN.py
 
